@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/4b7789e3a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Tektur:wght@500&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Tektur:wght@500&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat:wght@100&family=Roboto:wght@100&family=Tektur:wght@500&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat:wght@100&family=Roboto:wght@100&family=Space+Grotesk:wght@300&family=Tektur:wght@500&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="newshuff.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compressor</title>
+  </head>
+  <body>
+    <h1>COMPRESSOR</h1>
+    <div class="container">
+      <div class="compressor" id="comp">
+        <img src="ufo.png" alt="" />
+
+        <div class="content">
+          <h4>ENTER DATA</h4>
+
+          <input
+            type="text"
+            id="Encryption-text"
+            class="text-data"
+            name="input-box"
+          />
+          <button type="button" class="btn" onclick="displayEncodedText()">
+            Encrypt
+          </button>
+          <h4 class="output-data">Encrypted Data</h4>
+
+          <p class="output" id="output-text"></p>
+        </div>
+      </div>
+
+      <!----DEccompefddddddddd-->
+      <div class="Decompressor" id="dcomp">
+        <img src="ufo.png" alt="" />
+
+        <div class="Dcontent">
+          <h4>ENTER DATA</h4>
+
+          <input
+            type="text"
+            id="Decryption-text"
+            class="Dtext-data"
+            name="input-box"
+          />
+          <button type="button" class="Dbtn" onclick="displayDecodedText()">
+            Decrypt
+          </button>
+          <h4 class="Doutput-data">Decrypted Data</h4>
+
+          <p class="Doutput dOutput" id="doutput-text"></p>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="clear-btn footr">Clear</button>
+    <button type="button" id="toggler" class="footr" onclick="toggle()">
+      DECOMPRESSOR
+    </button>
+    <script src="newscript.js"></script>
+  </body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="newshuff.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/4b7789e3a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="compressor">
+        <h1 class="chead">COMPRESSOR</h1>
+        <h4>ENTER DATA</h4>
+
+        <input
+          type="text"
+          id="Encryption-text"
+          class="text-data"
+          name="input-box"
+        />
+        <button type="button" class="btn" onclick="displayEncodedText()">
+          Encrypt
+        </button>
+        <h4>Encrypted Data</h4>
+
+        <i class="fa-solid fa-copy"></i>
+        <p class="output" id="output-text"></p>
+      </div>
+
+      <div class="decompressor">
+        <h1 class="chead">DECOMPRESSOR</h1>
+        <h4>ENTER DATA</h4>
+        <input
+          type="text"
+          id="Decryption-text"
+          class="text-data"
+          name="input-box"
+        />
+        <button type="button" class="btn" onclick="displayDecodedText()">
+          Decrypt
+        </button>
+        <h4>Decrypted Data</h4>
+
+        <p class="output" id="dOutput-text"></p>
+      </div>
+    </div>
+    <footer><button type="button" class="clear-btn">Clear All</button></footer>
+
+    <script src="newscript.js"></script>
+  </body>
+</html>
+-->

@@ -1,0 +1,388 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: #b799ff;
+  /* background: linear-gradient(300deg, #7474bf, #348ac7); */
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: White;
+  font-family: Montserrat;
+  font-size: 5vw;
+
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.compressor {
+  background: linear-gradient(300deg, #9575de, #6554af);
+  height: 80vh;
+  width: 60vw;
+  color: balck;
+  font-family: "Space Grotesk", sans-serif;
+  border-radius: 10%;
+}
+
+#added {
+  background: linear-gradient(300deg, #526d82, #27374d);
+}
+
+.Decompressor {
+  background: linear-gradient(300deg, #9575de, #6554af);
+  height: 80vh;
+  width: 60vw;
+  color: balck;
+  font-family: "Space Grotesk", sans-serif;
+  border-radius: 10%;
+  display: none;
+}
+
+h4 {
+  font-family: Montserrat;
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+img {
+  position: relative;
+  float: right;
+  animation-name: ufo;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ufo {
+  0% {
+    top: 0px;
+    right: 0px;
+  }
+
+  10% {
+    right: 550px;
+    top: 450px;
+  }
+
+  20% {
+    top: 0px;
+    right: 420px;
+  }
+
+  30% {
+    right: 0px;
+    top: 450px;
+  }
+  40% {
+    right: 550px;
+    top: 450px;
+  }
+
+  50% {
+    top: 0px;
+    right: 550px;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+  }
+}
+
+.Dcontent {
+  height: 60vh;
+  width: 22vw;
+  position: relative;
+  left: 18rem;
+  bottom: 22rem;
+  color: white;
+  margin-top: 4rem;
+  float: left;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+.content {
+  /* background-color: rgba(234, 246, 246, 0.1); */
+  height: 60vh;
+  width: 22vw;
+  position: relative;
+  left: 18rem;
+  bottom: 22rem;
+  color: white;
+  margin-top: 4rem;
+  float: left;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.text-data,
+.Dtext-data {
+  height: 1.8rem;
+  width: 6rem;
+  margin-left: 2rem;
+  transition: width 0.4s ease-in-out;
+  background-color: rgba(67, 66, 66, 0.1);
+  border-color: white;
+  color: white;
+  border-radius: 10%;
+  border-style: groove;
+}
+
+.text-data:focus,
+.Dtext-data:focus {
+  width: 60%;
+}
+
+.btn,
+.Dbtn {
+  box-shadow: 0 0 5px white, 0 0 25px white;
+  height: 2.4rem;
+  color: white;
+  width: 4.2rem;
+  background-color: #6554af;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+.btn:hover,
+.Dbtn:hover {
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 25px white, 0 0 25px white,
+    0 0 25px white;
+}
+
+.output-data,
+.Doutput-data {
+  margin-top: 5rem;
+
+  margin-bottom: 0;
+}
+
+.output,
+.dOutput {
+  word-wrap: break-word;
+}
+.fa-solid {
+  margin-left: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.clear-btn {
+  background-color: #6554af;
+  width: 5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10%;
+  margin-left: 4rem;
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+.clear-btn:hover,
+#toggler:hover {
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 25px white, 0 0 25px white,
+    0 0 25px white;
+}
+
+#toggler {
+  background-color: #6554af;
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10%;
+  margin-left: 75rem;
+  transition: all 0.2s ease;
+}
+/*
+
+.boy {
+  height: 200px;
+  width: 200px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.compressor {
+  background-color: rgba(32, 38, 46, 0.5);
+  height: 60vh;
+  width: 25vw;
+  margin: 4rem 0 0 2rem;
+  border-radius: 5%;
+  border-left-style: groove;
+  color: rgb(233, 232, 232);
+}
+
+.chead,
+.dhead {
+  margin-left: 4.2rem;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding-bottom: 1.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 0 0 2rem;
+  resize: vertical;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  width: 70%;
+}
+
+h4 {
+  margin-top: 4em;
+  margin-bottom: 0.2rem;
+  margin-left: 2.2rem;
+}
+
+.decompressor {
+  background-color: rgba(32, 38, 46, 0.5);
+  height: 60vh;
+  margin: 4rem 2rem 0 0rem;
+  width: 25vw;
+  border-radius: 5%;
+  border-left-style: groove;
+  color: rgb(233, 232, 232);
+}
+
+.text-data {
+  height: 1.2rem;
+  width: 5rem;
+  margin-left: 2rem;
+  transition: width 0.4s ease-in-out;
+  background-color: rgba(67, 66, 66, 0.1);
+  border-color: rgba(67, 66, 66, 0.1);
+  color: white;
+  border: none;
+}
+
+.text-data:focus {
+  width: 10%;
+}
+
+.btn {
+  float: right;
+  margin-right: 5rem;
+  padding: 0.5rem;
+  background-color: rgba(67, 66, 66, 0.1);
+
+  color: rgb(233, 232, 232);
+  border-radius: 20%;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.output {
+  width: 98.7%;
+  height: 41%;
+  background-color: rgba(67, 66, 66, 0.1);
+  border: none;
+  border-radius: 10%;
+  color: white;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .compressor,
+  .decompressor {
+    width: 70vw;
+  }
+
+  .decompressor {
+    margin-left: 2rem;
+  }
+}
+
+.clear-btn {
+  width: 8rem;
+  height: 4rem;
+  border-radius: 30%;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(43, 39, 48, 0.1);
+  margin-top: 9vw;
+  margin-left: 47.5vw;
+  border-style-left: groove;
+}
+
+.clear-btn:hover {
+  box-shadow: 20px 30px 30px black inset;
+}
+
+@media (max-width: 1500px) and (min-width: 400px) {
+  .compressor,
+  .decompressor {
+    width: 25rem;
+  }
+
+  .chead {
+    margin-right: 4.5rem;
+  }
+
+  .decompressor {
+    margin-left: 2rem;
+  }
+}
+
+.fa-copy {
+  float: right;
+}
+*/
